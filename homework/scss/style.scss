@@ -1,0 +1,131 @@
+@import "./_base.scss";
+@import './_variables.scss';
+
+
+.wrapper{
+    width: 1110px;
+    height: 518px;
+
+    display: flex;
+    .container{
+        width: 255px;
+        height: 518px;
+        border-radius: 8px;
+        background: $mainColor;
+        margin-right: 30px;
+        .little_box{
+            width: 255px;
+            height: 354px;
+            background: #5747EA;
+            border-radius: 8px;
+            padding: 37px 0 0 32px;
+            margin-bottom: 26px;
+            .text_one{
+                margin-top: 43px;
+                font-weight: 400;
+                font-size: 15px;
+                color: $textColorTwo;
+            }
+            .text_two{
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 47px;
+                color: $textColor;
+            }
+        }
+        .text{
+            margin-left: 32px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: $textColorTwo;
+            cursor: pointer;
+            margin-bottom: 21px;
+            &:hover{
+                color: $textColor;
+            }
+        }
+    }
+    .box{
+        width: 765px;
+        height: 518px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .box_container{
+            width: 765px;
+            height: 244px;
+
+            display: flex;
+
+            .box_one{
+                width: 255px;
+                height: 244px;
+                margin-right: 30px;
+                &_bg_container{
+                    position: absolute;
+                    z-index: -1;
+                    width: 255px;
+                    height: 200px;
+                    background: #FF8B64;
+                    border-radius: 8px;
+                }
+                &_container{
+                    width: 255px;
+                    height: 199px;
+                    background: $mainColor;
+                    border-radius: 8px;
+                    margin-top: 45px;
+
+                    display: flex;
+                    flex-direction: column;
+                    .top_box{
+                        width: 190px;
+                        height: 22px;
+                        margin-top: 29px;
+                        margin-left: 30px;
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        &_text{
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: $textColor;
+                        }
+                    }
+                    .bottom_box{
+                        width: 144px;
+                        height: 92px;
+                        margin-top: 24px;
+                        margin-left: 30px;
+                        .hrs_text{
+                            width: 144px;
+                            height: 66px;
+                            margin-bottom: 8px;
+
+                            font-weight: 300;
+                            font-size: 56px;
+                            line-height: 67px;
+
+                            color: $textColor;
+                        }
+                        .text{
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: $textColorTwo;
+                        }
+                    }
+                    &:hover{
+                        transition: 1s;
+                        margin-top: 60px;
+                        background: $hoverColor;
+                    }
+                }
+            }
+        }
+
+    }
+}
